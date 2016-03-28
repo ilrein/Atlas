@@ -1,4 +1,9 @@
 # Objectives
 
-- Login with PassportJS + JWT
-- Returned authorized resource
+- Build an app with the latest tools:
+  - Production
+    - React
+    - Express
+  - Development
+    - Babel
+    - Webpack
