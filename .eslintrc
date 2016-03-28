@@ -1,5 +1,8 @@
 {
   "extends": "airbnb/base",
+  "plugings": [
+    "react"
+  ],
   "rules": {
     "func-names": 0,
     "no-console": 0
