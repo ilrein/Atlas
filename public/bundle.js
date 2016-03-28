@@ -44,17 +44,24 @@
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	const React = __webpack_require__(1);
-	const ReactDOM = __webpack_require__(158);
+	'use strict';
 
-	const Hello = React.createClass({
-	  render() {
-	    return React.createElement('h3', null, 'Hello React!');
-	  },
+	var React = __webpack_require__(1);
+	var ReactDOM = __webpack_require__(158);
+
+	var Hello = React.createClass({
+	  displayName: 'Hello',
+	  render: function render() {
+	    return React.createElement(
+	      'h3',
+	      null,
+	      'Hello Webpack'
+	    );
+	  }
 	});
 
-	ReactDOM.render(React.createElement(Hello), document.getElementById('app'));
-
+	// ReactDOM.render(React.createElement(Hello), document.getElementById('app'));
+	ReactDOM.render(React.createElement(Hello, null), document.getElementById('app'));
 
 /***/ },
 /* 1 */

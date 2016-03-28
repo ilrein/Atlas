@@ -3,8 +3,9 @@ const ReactDOM = require('react-dom');
 
 const Hello = React.createClass({
   render() {
-    return React.createElement('h3', null, 'Hello React!');
+    return <h3>Hello Webpack</h3>;
   },
 });
 
-ReactDOM.render(React.createElement(Hello), document.getElementById('app'));
+// ReactDOM.render(React.createElement(Hello), document.getElementById('app'));
+ReactDOM.render(<Hello />, document.getElementById('app'));
