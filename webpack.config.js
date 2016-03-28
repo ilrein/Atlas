@@ -6,6 +6,7 @@ module.exports = {
   },
   devtool: 'source-map',
   module: {
+    noParse: /node_modules\/json-schema\/lib\/validate\.js/,
     loaders: [
       {
         test: /\.js$/,
@@ -15,6 +16,15 @@ module.exports = {
           presets: ['react', 'es2015'],
         },
       },
+      {
+        test: /\.json$/,
+        loader: 'json-loader',
+      },
     ],
+  },
+  node: {
+    fs: 'empty',
+    net: 'empty',
+    tls: 'empty',
   },
 };

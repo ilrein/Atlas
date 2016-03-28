@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node atlas.js",
-    "dev": "webpack-dev-server eval --progress --colors --inline --hot --content-base public/"
+    "dev": "webpack-dev-server --progress --colors --inline --hot --content-base public/"
   },
   "keywords": [],
   "author": "",
@@ -19,11 +19,16 @@
     "eslint": "^2.5.1",
     "eslint-config-airbnb": "^6.2.0",
     "eslint-plugin-react": "^4.2.3",
+    "json-loader": "^0.5.4",
     "webpack": "^1.12.14",
     "webpack-dev-server": "^1.14.1"
   },
   "dependencies": {
+    "cors": "^2.7.1",
+    "dotenv": "^2.0.0",
+    "mongodb": "^2.1.11",
     "react": "^0.14.7",
-    "react-dom": "^0.14.7"
+    "react-dom": "^0.14.7",
+    "request": "^2.69.0"
   }
 }
