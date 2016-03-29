@@ -3,7 +3,6 @@ import API from './API';
 import LinkStore from '../stores/LinkStore';
 
 const _getAppState = () => { // eslint-disable-line
-  // console.log(LinkStore.getAll());
   return {
     links: LinkStore.getAll(),
   };
@@ -31,8 +30,10 @@ class Main extends React.Component {
   }
 
   onChange() {
-    console.log('4. In the View', _getAppState());
-    // this.setState(_getAppState());
+    console.log('4. In the View');
+    this.setState({
+      links: JSON.parse(_getAppState().links),
+    });
   }
 
   render() {

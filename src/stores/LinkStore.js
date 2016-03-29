@@ -12,7 +12,7 @@ class LinkStore extends EventEmitter {
       switch (action.actionType) {
         case ActionTypes.RECEIVE_LINKS:
           _links = action.links;
-          console.log('3. In LinkStore', _links);
+          console.log('3. In LinkStore');
           this.emit('change');
           break;
         default:
